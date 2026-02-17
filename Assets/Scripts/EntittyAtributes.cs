@@ -5,7 +5,8 @@ public class EntittyAtributes : MonoBehaviour
     public float hp;
     public float maxHP;
     public float mooveSpeed;
-    public float attackSpeed;
+    public float attackSpeed = 1;
+    public float attackVelocity;
 
     void Start()
     {
