@@ -9,11 +9,14 @@ public class EntittyAtributes : MonoBehaviour
     public float mooveSpeed;
     public float attackSpeed = 1;
     public float attackVelocity;
+    public float damage;
 
     [Header("Enemies")]
     //Enemy Atributes
     public float enemyAttackDamage;
     public float enemyMooveSpeed;
+    public float enemyMaxHP;
+    public float enemyHP;
     
 
     void Start()
