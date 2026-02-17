@@ -33,11 +33,16 @@ public class PlayerShoot : MonoBehaviour
 
         foreach (GameObject atualEnemy in enemies)
         {   
+            
+            if(atualEnemy == null)
+            {
+                continue;
+            }
             //calcular a distancia entre o inimigo e o player 
             float distance = Vector3.Distance(transform.position, atualEnemy.transform.position);
-            
+
             //verifica se a distancia atual é menor que a distancia inicial, se sim, distancia inicial = atual, assim seleciona o mais perto
-            if(distance < shortesDistance)
+            if (distance < shortesDistance)
             {
                 shortesDistance = distance;
                 targetEnemy = atualEnemy;
@@ -45,10 +50,14 @@ public class PlayerShoot : MonoBehaviour
 
         }
 
-        Vector3 enemyPosition = (targetEnemy.transform.position - transform.position).normalized;
+        if(targetEnemy != null)
+        {
+            Vector3 enemyPosition = (targetEnemy.transform.position - transform.position).normalized;
 
-        GameObject instantiateBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-        instantiateBullet.GetComponent<BulletPlayer>().Shoot(enemyPosition, playerAtributes.attackVelocity);
+            GameObject instantiateBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+            instantiateBullet.GetComponent<BulletPlayer>().Shoot(enemyPosition, playerAtributes.attackVelocity);
+        }
+            
     }
 
     void coolDown()
@@ -65,7 +74,9 @@ public class PlayerShoot : MonoBehaviour
             Attack();
             timerCoolDown = 0;
         }
-
-        
     }
+
+
+
+
 }
