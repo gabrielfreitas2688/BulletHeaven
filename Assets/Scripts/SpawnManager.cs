@@ -49,9 +49,11 @@ public class SpawnManager : MonoBehaviour
              yield return new WaitForEndOfFrame();
                 
             }
-            GameManeger.Instance.currentWave++;
-            isSpawning = false;
-              
-        
+        GameManeger.Instance.currentWave++;
+        isSpawning = false;
+        GameManeger.Instance.waveText.text = "WAVE: " + (GameManeger.Instance.currentWave - 1).ToString();
+
+
+
     }
 }

@@ -31,6 +31,7 @@ public class PlayerManagement : MonoBehaviour
             EntittyAtributes enemyAttr = collision.gameObject.GetComponent<EntittyAtributes>();
             TakeDamage(enemyAttr.enemyAttackDamage);
             Destroy(collision.gameObject);
+            GameManeger.Instance.GainXP(30);
         }
     }
 

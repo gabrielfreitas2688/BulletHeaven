@@ -26,6 +26,7 @@ public class EnemyManagement : MonoBehaviour
         if(enemyAtributes.enemyHP <= 0)
         {
             Destroy(gameObject);
+            GameManeger.Instance.GainXP(30);
         }
     }
 }

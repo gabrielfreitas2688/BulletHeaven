@@ -1,11 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI ;
 using UnityEngine.SceneManagement;
 
 public class GameManeger : MonoBehaviour
 {
-    GameObject[] enemys;
+    public Slider xpBar;
     public static GameManeger Instance;
-    public int currentWave = 1;
+    public int currentWave = 0;
+    public Text waveText;
+
+    int currentXP = 0;
+    int totalXP;
+    int playerLevel = 1;
 
     void Awake()
     {
@@ -24,12 +30,14 @@ public class GameManeger : MonoBehaviour
     }
     void Start()
     {
+        xpBar.maxValue = 100;
+        xpBar.value = 0;
         
     }
 
     void Update()
     {
- 
+
     }
 
     public void GameOver()
@@ -37,4 +45,20 @@ public class GameManeger : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
 
+    public void GainXP(int xp)
+    {
+        currentXP += xp;
+        totalXP += currentXP;
+        xpBar.value = currentXP;
+
+
+        if(totalXP >= playerLevel * 100)
+        {
+            playerLevel++;
+            Debug.Log("Upou de nível, nível atual: " + playerLevel);
+            currentXP = 0;
+            totalXP = 0;
+            
+        }
+    }
 }
