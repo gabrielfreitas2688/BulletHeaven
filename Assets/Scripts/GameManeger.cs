@@ -3,8 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManeger : MonoBehaviour
 {
-
+    GameObject[] enemys;
     public static GameManeger Instance;
+    public int currentWave = 1;
 
     void Awake()
     {
@@ -28,11 +29,12 @@ public class GameManeger : MonoBehaviour
 
     void Update()
     {
-        
+ 
     }
 
     public void GameOver()
     {
         SceneManager.LoadScene("SampleScene");
     }
+
 }

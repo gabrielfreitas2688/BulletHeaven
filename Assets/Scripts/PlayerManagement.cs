@@ -9,7 +9,7 @@ public class PlayerManagement : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<EntittyAtributes>();
-        enemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EntittyAtributes>();
+        
 
         player.hp = player.maxHP;
         hpBar.maxValue = player.maxHP;
@@ -24,16 +24,19 @@ public class PlayerManagement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
+
         if (collision.gameObject.tag == "Enemy")
         {
-            TakeDamage();
+            EntittyAtributes enemyAttr = collision.gameObject.GetComponent<EntittyAtributes>();
+            TakeDamage(enemyAttr.enemyAttackDamage);
             Destroy(collision.gameObject);
         }
     }
 
-    void TakeDamage()
+    void TakeDamage(float damage)
     {
-        player.hp -= enemy.enemyAttackDamage;
+        player.hp -= damage;
         hpBar.value = player.hp;
 
         if(player.hp <= 0)

@@ -190,7 +190,7 @@ MonoBehaviour:
   damage: 0
   enemyAttackDamage: 10
   enemyMooveSpeed: 6
-  enemyMaxHP: 50
+  enemyMaxHP: 25
   enemyHP: 0
 --- !u!114 &1526173899777670798
 MonoBehaviour:

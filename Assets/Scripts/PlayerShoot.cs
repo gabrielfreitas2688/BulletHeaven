@@ -14,7 +14,6 @@ public class PlayerShoot : MonoBehaviour
     void Start()
     {
         playerAtributes = GetComponent<EntittyAtributes>();
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
         timerCoolDown = playerAttackSpeedCoolDown;
     }
 
@@ -27,6 +26,7 @@ public class PlayerShoot : MonoBehaviour
     }
     void Attack()
     {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
         //pega uma distancia mt grande para ter como parâmetro inicial
         float shortesDistance = Mathf.Infinity;
 
