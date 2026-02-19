@@ -54,11 +54,14 @@ public class GameManeger : MonoBehaviour
 
         if(totalXP >= playerLevel * 100)
         {
+            
+            PlayerManagement player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagement>();
             playerLevel++;
-            Debug.Log("Upou de nível, nível atual: " + playerLevel);
             currentXP = 0;
             totalXP = 0;
-            
+            player.SelectionStats();
+            Time.timeScale = 0;
+
         }
     }
 }
