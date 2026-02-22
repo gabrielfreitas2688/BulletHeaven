@@ -4,17 +4,22 @@ public class PlayerMovement : MonoBehaviour
 {
     EntittyAtributes playerAtributes;
     Rigidbody2D rb;
+    SpriteRenderer spritePlayer;
+    Animator anim;
 
     void Start()
     {
         playerAtributes = GetComponent<EntittyAtributes>();
         rb = GetComponent<Rigidbody2D>();
+        spritePlayer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Movement();
+        Flip();
     }
     void Movement()
     {
@@ -31,6 +36,19 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.linearVelocity = direcao * playerAtributes.mooveSpeed;
+        anim.SetBool("isRun", true);
 
+    }
+
+    void Flip()
+    {
+        if(Input.GetAxisRaw("Horizontal") < 0)
+        {
+            spritePlayer.flipX = true;
+        }
+        else if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            spritePlayer.flipX = false;
+        }
     }
 }

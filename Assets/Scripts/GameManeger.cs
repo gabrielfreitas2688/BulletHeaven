@@ -10,7 +10,6 @@ public class GameManeger : MonoBehaviour
     public Text waveText;
 
     int currentXP = 0;
-    int totalXP;
     int playerLevel = 1;
 
     void Awake()
@@ -48,17 +47,20 @@ public class GameManeger : MonoBehaviour
     public void GainXP(int xp)
     {
         currentXP += xp;
-        totalXP += currentXP;
+
         xpBar.value = currentXP;
 
+        Debug.Log("XP atual: " + currentXP);
+        Debug.Log("XP BAR: " + xpBar.value);
 
-        if(totalXP >= playerLevel * 100)
+
+        if(currentXP >= playerLevel * 100)
         {
             
             PlayerManagement player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagement>();
             playerLevel++;
             currentXP = 0;
-            totalXP = 0;
+            xpBar.value = currentXP;
             player.SelectionStats();
             Time.timeScale = 0;
 

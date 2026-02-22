@@ -6,6 +6,7 @@ public class PlayerShoot : MonoBehaviour
     EntittyAtributes playerAtributes;
     GameObject[] enemies;
     GameObject targetEnemy = null;
+    public Transform shootPoint;
     public GameObject bullet;
     float playerAttackSpeedCoolDown;
     float timerCoolDown;
@@ -54,7 +55,7 @@ public class PlayerShoot : MonoBehaviour
         {
             Vector3 enemyPosition = (targetEnemy.transform.position - transform.position).normalized;
 
-            GameObject instantiateBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+            GameObject instantiateBullet = Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
             instantiateBullet.GetComponent<BulletPlayer>().Shoot(enemyPosition, playerAtributes.attackVelocity);
         }
             

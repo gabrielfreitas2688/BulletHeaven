@@ -37,7 +37,7 @@ public class PlayerManagement : MonoBehaviour
         }
     }
 
-    void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
         player.hp -= damage;
         hpBar.value = player.hp;
