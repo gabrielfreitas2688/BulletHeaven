@@ -25,5 +25,8 @@ public class EnemyMovement : MonoBehaviour
         Vector3 playerPosition = player.transform.position;
         Vector3 playerDistance = (playerPosition - transform.position).normalized;
         rb.linearVelocity = playerDistance * enemyAtributes.enemyMooveSpeed;
+
     }
+
 }
+

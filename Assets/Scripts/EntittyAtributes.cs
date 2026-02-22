@@ -17,7 +17,9 @@ public class EntittyAtributes : MonoBehaviour
     public float enemyMooveSpeed;
     public float enemyMaxHP;
     public float enemyHP;
-    
+
+    [Header("Enemies")]
+    public float enemyShooterMooveSpeed;
 
     void Start()
     {

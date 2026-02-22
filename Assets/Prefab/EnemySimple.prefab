@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5444038388401047458}
   - component: {fileID: 8732233148760613603}
   - component: {fileID: 3209538785463734689}
+  - component: {fileID: 2253513684363358880}
   - component: {fileID: 4735279075068262037}
   - component: {fileID: 1526173899777670798}
-  - component: {fileID: 1175362829937265350}
-  - component: {fileID: 2253513684363358880}
+  - component: {fileID: 1096617944415745033}
   m_Layer: 0
   m_Name: EnemySimple
   m_TagString: Enemy
@@ -171,53 +171,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4735279075068262037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23026599466617893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca0066e594f2bf74c8cbca95fa8ebe3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EntittyAtributes
-  hp: 0
-  maxHP: 0
-  mooveSpeed: 0
-  attackSpeed: 0
-  attackVelocity: 0
-  damage: 0
-  enemyAttackDamage: 10
-  enemyMooveSpeed: 6
-  enemyMaxHP: 25
-  enemyHP: 0
---- !u!114 &1526173899777670798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23026599466617893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e6b8161b2404c499ce7e7608e1750e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyManagement
-  HPBar: {fileID: 9065499780376401321}
---- !u!114 &1175362829937265350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 23026599466617893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afea256a6de63914a99327aa3f4c2814, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
 --- !u!61 &2253513684363358880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -264,6 +217,54 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4735279075068262037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23026599466617893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0066e594f2bf74c8cbca95fa8ebe3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EntittyAtributes
+  hp: 0
+  maxHP: 0
+  mooveSpeed: 0
+  attackSpeed: 0
+  attackVelocity: 0
+  damage: 0
+  enemyAttackDamage: 10
+  enemyMooveSpeed: 6
+  enemyMaxHP: 25
+  enemyHP: 0
+  enemyShooterMooveSpeed: 0
+--- !u!114 &1526173899777670798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23026599466617893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e6b8161b2404c499ce7e7608e1750e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyManagement
+  HPBar: {fileID: 9065499780376401321}
+--- !u!114 &1096617944415745033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23026599466617893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afea256a6de63914a99327aa3f4c2814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
 --- !u!1 &1891050409323489320
 GameObject:
   m_ObjectHideFlags: 0
