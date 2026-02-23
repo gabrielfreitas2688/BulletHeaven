@@ -36,7 +36,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         rb.linearVelocity = direcao * playerAtributes.mooveSpeed;
-        anim.SetBool("isRun", true);
+        if(direcaoX != 0 || direcaoY != 0)
+        {
+            anim.SetBool("isRun", true);
+        }
+        else { anim.SetBool("isRun", false); }
+            
 
     }
 

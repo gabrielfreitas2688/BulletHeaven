@@ -6,7 +6,7 @@ public class GameManeger : MonoBehaviour
 {
     public Slider xpBar;
     public static GameManeger Instance;
-    public int currentWave = 0;
+    public int currentWave;
     public Text waveText;
 
     int currentXP = 0;
@@ -49,12 +49,10 @@ public class GameManeger : MonoBehaviour
         currentXP += xp;
 
         xpBar.value = currentXP;
-
-        Debug.Log("XP atual: " + currentXP);
-        Debug.Log("XP BAR: " + xpBar.value);
+        int maxXP = playerLevel * 100;
 
 
-        if(currentXP >= playerLevel * 100)
+        if (currentXP >= maxXP)
         {
             
             PlayerManagement player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerManagement>();
@@ -65,5 +63,7 @@ public class GameManeger : MonoBehaviour
             Time.timeScale = 0;
 
         }
+
+        xpBar.maxValue = maxXP;
     }
 }
