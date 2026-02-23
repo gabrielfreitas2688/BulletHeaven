@@ -5,11 +5,11 @@ public class EntittyAtributes : MonoBehaviour
     [Header("Player")]
     //Player Atributes
     public float hp;
-    public float maxHP;
-    public float mooveSpeed;
-    public float attackSpeed = 1;
-    public float attackVelocity;
-    public float damage;
+    public float maxHP = 100;
+    public float mooveSpeed = 7;
+    public float attackSpeed = 4;
+    public float bulletVelocity;
+    public float damage = 5;
 
     [Header("Enemie Simple")]
     //Enemy Atributes
@@ -27,7 +27,7 @@ public class EntittyAtributes : MonoBehaviour
 
     void Start()
     {
-        
+        bulletVelocity = mooveSpeed * 2.5f;
     }
 
     // Update is called once per frame

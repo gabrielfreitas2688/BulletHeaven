@@ -56,7 +56,7 @@ public class PlayerShoot : MonoBehaviour
             Vector3 enemyPosition = (targetEnemy.transform.position - transform.position).normalized;
 
             GameObject instantiateBullet = Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
-            instantiateBullet.GetComponent<BulletPlayer>().Shoot(enemyPosition, playerAtributes.attackVelocity);
+            instantiateBullet.GetComponent<BulletPlayer>().Shoot(enemyPosition, playerAtributes.bulletVelocity);
         }
             
     }

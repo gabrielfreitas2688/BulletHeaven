@@ -65,7 +65,7 @@ public class PlayerManagement : MonoBehaviour
         }
         if (stat == "atkvelocity")
         {
-            player.attackVelocity += 2;
+            player.bulletVelocity += 2;
         }
         if (stat == "damage")
         {
@@ -84,7 +84,7 @@ public class PlayerManagement : MonoBehaviour
         statsInfo[0].text = player.maxHP.ToString();
         statsInfo[1].text = player.mooveSpeed.ToString();
         statsInfo[2].text = player.attackSpeed.ToString();
-        statsInfo[3].text = player.attackVelocity.ToString();
+        statsInfo[3].text = player.bulletVelocity.ToString();
         statsInfo[4].text = player.damage.ToString();
     }
 

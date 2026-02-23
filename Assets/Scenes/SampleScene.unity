@@ -92577,7 +92577,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Atk Velocity
+  m_Text: 'Bullet Speed
+
+'
 --- !u!222 &1362691836
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -92705,7 +92707,7 @@ MonoBehaviour:
   maxHP: 100
   mooveSpeed: 7
   attackSpeed: 4
-  attackVelocity: 5
+  bulletVelocity: 0
   damage: 5
   enemyAttackDamage: 0
   enemyMooveSpeed: 0
