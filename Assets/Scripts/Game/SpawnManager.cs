@@ -9,8 +9,26 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemy;
     public GameObject[] enemiesAlive;
     bool isSpawning = false;
-    
-    void Start()
+
+    public static SpawnManager Instance;
+    void Awake()
+    {
+
+        if (Instance == null)
+        {
+
+            Instance = this;
+
+        }
+        else
+        {
+
+            Destroy(gameObject);
+        }
+
+    }
+
+        void Start()
     {
         GameManeger.Instance.currentWave = 0;
     }

@@ -7,6 +7,8 @@ public class PlayerShoot : MonoBehaviour
     GameObject[] enemies;
     GameObject targetEnemy = null;
     public Transform shootPoint;
+    public Transform pivotDrone;
+    float rotationSpeedDrone = 5; 
     public GameObject bullet;
     float playerAttackSpeedCoolDown;
     float timerCoolDown;
@@ -21,40 +23,19 @@ public class PlayerShoot : MonoBehaviour
 
     void Update()
     {
-
+        SearchEnemy();
+        DroneMovement();
         coolDown();
 
     }
     void Attack()
     {
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        //pega uma distancia mt grande para ter como parâmetro inicial
-        float shortesDistance = Mathf.Infinity;
-
-
-        foreach (GameObject atualEnemy in enemies)
-        {   
-            
-            if(atualEnemy == null)
-            {
-                continue;
-            }
-            //calcular a distancia entre o inimigo e o player 
-            float distance = Vector3.Distance(transform.position, atualEnemy.transform.position);
-
-            //verifica se a distancia atual é menor que a distancia inicial, se sim, distancia inicial = atual, assim seleciona o mais perto
-            if (distance < shortesDistance)
-            {
-                shortesDistance = distance;
-                targetEnemy = atualEnemy;
-            }
-
-        }
+        
 
         if(targetEnemy != null)
         {
+          
             Vector3 enemyPosition = (targetEnemy.transform.position - transform.position).normalized;
-
             GameObject instantiateBullet = Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
             instantiateBullet.GetComponent<BulletPlayer>().Shoot(enemyPosition, playerAtributes.bulletVelocity);
         }
@@ -74,6 +55,45 @@ public class PlayerShoot : MonoBehaviour
         {
             Attack();
             timerCoolDown = 0;
+        }
+    }
+
+    void DroneMovement()
+    {
+        if (targetEnemy == null) return;
+        
+        Vector3 enemyPosition = (targetEnemy.transform.position - transform.position).normalized;
+        float anguloDrone = Mathf.Atan2(enemyPosition.y, enemyPosition.x) * Mathf.Rad2Deg;
+        Quaternion targetRotation = Quaternion.Euler(0, 0, anguloDrone);
+        pivotDrone.rotation = Quaternion.Slerp(pivotDrone.rotation, targetRotation, Time.deltaTime * rotationSpeedDrone);
+        
+        
+    }
+
+    void SearchEnemy()
+    {
+        enemies = SpawnManager.Instance.enemiesAlive;
+        //pega uma distancia mt grande para ter como parâmetro inicial
+        float shortesDistance = Mathf.Infinity;
+
+
+        foreach (GameObject atualEnemy in enemies)
+        {
+
+            if (atualEnemy == null)
+            {
+                continue;
+            }
+            //calcular a distancia entre o inimigo e o player 
+            float distance = Vector3.Distance(transform.position, atualEnemy.transform.position);
+
+            //verifica se a distancia atual é menor que a distancia inicial, se sim, distancia inicial = atual, assim seleciona o mais perto
+            if (distance < shortesDistance)
+            {
+                shortesDistance = distance;
+                targetEnemy = atualEnemy;
+            }
+
         }
     }
 
