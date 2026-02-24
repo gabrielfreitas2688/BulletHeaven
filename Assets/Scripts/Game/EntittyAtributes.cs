@@ -27,7 +27,7 @@ public class EntittyAtributes : MonoBehaviour
 
     void Start()
     {
-        bulletVelocity = mooveSpeed * 2.5f;
+        bulletVelocity = Mathf.Round(mooveSpeed * 2.5f);
     }
 
     // Update is called once per frame

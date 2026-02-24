@@ -494,7 +494,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 368543389579951487, guid: d759188614184af498bed1819a66ad47, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8584906, g: 0.8382432, b: 0.8382432, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
   maxHP: 0
   mooveSpeed: 0
   attackSpeed: 0
-  attackVelocity: 0
+  bulletVelocity: 0
   damage: 0
   enemyAttackDamage: 10
   enemyMooveSpeed: 6
