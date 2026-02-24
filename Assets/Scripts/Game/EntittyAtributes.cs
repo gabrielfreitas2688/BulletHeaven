@@ -37,7 +37,6 @@ public class EntittyAtributes : MonoBehaviour
     void Update()
     {
         DamageBlink();
-        Debug.Log(sprite.color);
     }
 
     public void DamageBlink()

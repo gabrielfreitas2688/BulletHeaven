@@ -3,6 +3,7 @@ using UnityEngine;
 public class CameraManagement : MonoBehaviour
 {
     public GameObject player;
+    public float minX, maxX, minY, maxY;
 
     void Start()
     {
@@ -12,7 +13,12 @@ public class CameraManagement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(this.transform.position, new Vector3(player.transform.position.x, player.transform.position.y, -10), 1f * Time.fixedDeltaTime);
+        Vector3 posicaoAlvo = player.transform.position;
+        posicaoAlvo.z = -10;
+        posicaoAlvo.x = Mathf.Clamp(posicaoAlvo.x, minX, maxX);
+        posicaoAlvo.y = Mathf.Clamp(posicaoAlvo.y, minY, maxY);
+
+        transform.position = Vector3.Lerp(this.transform.position, new Vector3(posicaoAlvo.x, posicaoAlvo.y, -10), 1f * Time.fixedDeltaTime);
     }
 
 
