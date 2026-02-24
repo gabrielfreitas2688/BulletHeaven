@@ -27,7 +27,7 @@ public class BulletPlayer : MonoBehaviour
     public void Shoot(Vector3 direcao, float velocity)
     {
         rb.linearVelocity = direcao * velocity;
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 4f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -1,37 +1,43 @@
 fileFormatVersion: 2
-guid: 492efaf97ff6e5c4eb46395ccbb0f6a6
+guid: 6c797d7319f864b419e357ac0f1d296e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5990313410594645988
-    second: john_run_shoot_0
+      213: -1677199824353486641
+    second: newIdle_0
   - first:
-      213: 6504641718420810492
-    second: john_run_shoot_1
+      213: -4521810184406621839
+    second: newIdle_1
   - first:
-      213: 376210602617627986
-    second: john_run_shoot_2
+      213: 8809247563790834252
+    second: newIdle_2
   - first:
-      213: -7493980004150962503
-    second: john_run_shoot_3
+      213: 4326481417790561258
+    second: newIdle_3
   - first:
-      213: -1162892746439276244
-    second: john_run_shoot_4
+      213: -2767549620048713104
+    second: newIdle_4
   - first:
-      213: 6124285916657834539
-    second: john_run_shoot_5
+      213: 8199101393785472996
+    second: newIdle_5
   - first:
-      213: -5967318186370999885
-    second: john_run_shoot_6
+      213: -774454106304888126
+    second: newIdle_6
   - first:
-      213: -729085967697287416
-    second: john_run_shoot_7
+      213: -4861251296259256384
+    second: newIdle_7
   - first:
-      213: -6026253857444309258
-    second: john_run_shoot_8
+      213: 4992008216807429769
+    second: newIdle_8
   - first:
-      213: -536124137742152371
-    second: john_run_shoot_9
+      213: -5618786725746792997
+    second: newIdle_9
+  - first:
+      213: -80231043977096504
+    second: newIdle_10
+  - first:
+      213: 2472658858262911750
+    second: newIdle_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,17 +129,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: john_run_shoot_0
+      name: newIdle_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 19
-        height: 19
+        x: 16
+        y: 5
+        width: 17
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e7a0c31f4ed12350800000000000000
-      internalID: 5990313410594645988
+      spriteID: fc8101c55a369b8e0800000000000000
+      internalID: -1677199824353486641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_run_shoot_1
+      name: newIdle_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 0
-        width: 19
-        height: 18
+        x: 64
+        y: 4
+        width: 17
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfaa8a90e21254a50800000000000000
-      internalID: 6504641718420810492
+      spriteID: 17123b8489d4f31c0800000000000000
+      internalID: -4521810184406621839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_run_shoot_2
+      name: newIdle_2
       rect:
         serializedVersion: 2
-        x: 56
-        y: 0
-        width: 21
-        height: 18
+        x: 112
+        y: 4
+        width: 17
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25562c1cc81983500800000000000000
-      internalID: 376210602617627986
+      spriteID: c4a5a326cfbb04a70800000000000000
+      internalID: 8809247563790834252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_run_shoot_3
+      name: newIdle_3
       rect:
         serializedVersion: 2
-        x: 83
-        y: 0
-        width: 19
-        height: 19
+        x: 160
+        y: 4
+        width: 17
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +227,152 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b693ba14e8000890800000000000000
-      internalID: -7493980004150962503
+      spriteID: aeb1cb24defba0c30800000000000000
+      internalID: 4326481417790561258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_run_shoot_4
+      name: newIdle_4
       rect:
         serializedVersion: 2
-        x: 110
-        y: 1
+        x: 208
+        y: 4
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07aaabe9840b799d0800000000000000
+      internalID: -2767549620048713104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newIdle_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 4
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e74ef5e64f09c170800000000000000
+      internalID: 8199101393785472996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newIdle_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 4
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2cad2f7169045f0800000000000000
+      internalID: -774454106304888126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newIdle_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 4
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf4f8ab3bd598cb0800000000000000
+      internalID: -4861251296259256384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newIdle_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 4
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98653ae360d274540800000000000000
+      internalID: 4992008216807429769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newIdle_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 4
+        width: 17
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5ae271e3f0602b0800000000000000
+      internalID: -5618786725746792997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newIdle_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 4
         width: 18
-        height: 18
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +381,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c29cb9855339cdfe0800000000000000
-      internalID: -1162892746439276244
+      spriteID: 8c259c36a46f2eef0800000000000000
+      internalID: -80231043977096504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_run_shoot_5
+      name: newIdle_11
       rect:
         serializedVersion: 2
-        x: 136
-        y: 0
-        width: 19
-        height: 19
+        x: 544
+        y: 4
+        width: 17
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,96 +403,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2a5155e795ddf450800000000000000
-      internalID: 6124285916657834539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: john_run_shoot_6
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 0
-        width: 20
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b9d0a7c9b3df2da0800000000000000
-      internalID: -5967318186370999885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: john_run_shoot_7
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 0
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8076eacdc24c1e5f0800000000000000
-      internalID: -729085967697287416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: john_run_shoot_8
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 0
-        width: 20
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f654bc8b027e5ca0800000000000000
-      internalID: -6026253857444309258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: john_run_shoot_9
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 1
-        width: 20
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4dcd5eefed4f88f0800000000000000
-      internalID: -536124137742152371
+      spriteID: 60bdb718126a05220800000000000000
+      internalID: 2472658858262911750
       vertices: []
       indices: 
       edges: []
@@ -350,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 095f716f3e476bf42ae21b2cb01dcab1
+    spriteID: c0aebbcb4a280034aab1795ceb89c9ea
     internalID: 0
     vertices: []
     indices: 
@@ -358,20 +421,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      john_run_shoot_0: 5990313410594645988
-      john_run_shoot_1: 6504641718420810492
-      john_run_shoot_2: 376210602617627986
-      john_run_shoot_3: -7493980004150962503
-      john_run_shoot_4: -1162892746439276244
-      john_run_shoot_5: 6124285916657834539
-      john_run_shoot_6: -5967318186370999885
-      john_run_shoot_7: -729085967697287416
-      john_run_shoot_8: -6026253857444309258
-      john_run_shoot_9: -536124137742152371
+      newIdle_0: -1677199824353486641
+      newIdle_1: -4521810184406621839
+      newIdle_10: -80231043977096504
+      newIdle_11: 2472658858262911750
+      newIdle_2: 8809247563790834252
+      newIdle_3: 4326481417790561258
+      newIdle_4: -2767549620048713104
+      newIdle_5: 8199101393785472996
+      newIdle_6: -774454106304888126
+      newIdle_7: -4861251296259256384
+      newIdle_8: 4992008216807429769
+      newIdle_9: -5618786725746792997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

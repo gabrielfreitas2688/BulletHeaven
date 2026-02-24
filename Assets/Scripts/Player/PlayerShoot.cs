@@ -8,10 +8,12 @@ public class PlayerShoot : MonoBehaviour
     GameObject targetEnemy = null;
     public Transform shootPoint;
     public Transform pivotDrone;
-    float rotationSpeedDrone = 5; 
+    public SpriteRenderer spriteDrone;
+    float rotationSpeedDrone = 4; 
     public GameObject bullet;
     float playerAttackSpeedCoolDown;
     float timerCoolDown;
+
 
 
     void Start()
@@ -23,6 +25,7 @@ public class PlayerShoot : MonoBehaviour
 
     void Update()
     {
+
         SearchEnemy();
         DroneMovement();
         coolDown();
@@ -66,8 +69,20 @@ public class PlayerShoot : MonoBehaviour
         float anguloDrone = Mathf.Atan2(enemyPosition.y, enemyPosition.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(0, 0, anguloDrone);
         pivotDrone.rotation = Quaternion.Slerp(pivotDrone.rotation, targetRotation, Time.deltaTime * rotationSpeedDrone);
+
         
-        
+        if (pivotDrone.eulerAngles.z > 90 && pivotDrone.eulerAngles.z < 270)
+        {
+            
+            pivotDrone.localScale = new Vector3(1, -1, 1);
+        }
+        else
+        {
+            
+            pivotDrone.localScale = new Vector3(1, 1, 1);
+        }
+
+
     }
 
     void SearchEnemy()

@@ -22,7 +22,7 @@ public class BulletEnemy : MonoBehaviour
 
         rb.linearVelocity = direcao * velocity;
 
-        Destroy(this.gameObject, 2.5f);
+        Destroy(this.gameObject, 4.5f);
 
     }
 

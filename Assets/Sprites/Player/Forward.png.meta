@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 8e3c35fd7343dbd459d88d02c96b9e59
+guid: 15fd87e9008a22d4581521beb684633f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1690765374234556359
-    second: john_idle_ng_0
+      213: 6337757556742298555
+    second: Forward_0
   - first:
-      213: 8896980160413994547
-    second: john_idle_ng_1
+      213: 3729328573027383400
+    second: Forward_1
   - first:
-      213: -6207732704684553570
-    second: john_idle_ng_2
+      213: -3533969994375903138
+    second: Forward_2
   - first:
-      213: 7393464715920297178
-    second: john_idle_ng_3
-  - first:
-      213: -2351007393963300501
-    second: john_idle_ng_4
+      213: 3771788192115348113
+    second: Forward_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,115 +105,106 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: john_idle_ng_0
+      name: Forward_0
       rect:
         serializedVersion: 2
         x: 5
-        y: 0
-        width: 19
-        height: 18
+        y: 13
+        width: 38
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c7f7c9562ec67710800000000000000
-      internalID: 1690765374234556359
+      spriteID: bbb1c224bec34f750800000000000000
+      internalID: 6337757556742298555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_ng_1
+      name: Forward_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 0
-        width: 19
-        height: 18
+        x: 53
+        y: 14
+        width: 38
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33e8c23515c687b70800000000000000
-      internalID: 8896980160413994547
+      spriteID: 868f20e049c31c330800000000000000
+      internalID: 3729328573027383400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_ng_2
+      name: Forward_2
       rect:
         serializedVersion: 2
-        x: 57
-        y: 0
-        width: 19
-        height: 18
+        x: 101
+        y: 13
+        width: 38
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9ac3bcbef3b9d9a0800000000000000
-      internalID: -6207732704684553570
+      spriteID: e58c55e8301d4fec0800000000000000
+      internalID: -3533969994375903138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: john_idle_ng_3
+      name: Forward_3
       rect:
         serializedVersion: 2
-        x: 83
-        y: 0
-        width: 19
-        height: 18
+        x: 149
+        y: 12
+        width: 38
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: adc40d3acfcda9660800000000000000
-      internalID: 7393464715920297178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: john_idle_ng_4
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 0
-        width: 19
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b69208a3b3b8f5fd0800000000000000
-      internalID: -2351007393963300501
+      spriteID: 1925c0f7065185430800000000000000
+      internalID: 3771788192115348113
       vertices: []
       indices: 
       edges: []
@@ -225,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4a5e760b06d08274d804043084e92715
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -233,15 +221,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      john_idle_ng_0: 1690765374234556359
-      john_idle_ng_1: 8896980160413994547
-      john_idle_ng_2: -6207732704684553570
-      john_idle_ng_3: 7393464715920297178
-      john_idle_ng_4: -2351007393963300501
+      Forward_0: 6337757556742298555
+      Forward_1: 3729328573027383400
+      Forward_2: -3533969994375903138
+      Forward_3: 3771788192115348113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
