@@ -37,6 +37,7 @@ public class BulletPlayer : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             EntittyAtributes atributes = collision.GetComponent<EntittyAtributes>();
+            collision.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
 
             if (atributes != null)
             {

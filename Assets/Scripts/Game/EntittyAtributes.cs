@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EntittyAtributes : MonoBehaviour
 {
+    SpriteRenderer sprite;
+
     [Header("Player")]
     //Player Atributes
     public float hp;
@@ -28,12 +30,22 @@ public class EntittyAtributes : MonoBehaviour
     void Start()
     {
         bulletVelocity = Mathf.Round(mooveSpeed * 2.5f);
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        DamageBlink();
+        Debug.Log(sprite.color);
+    }
+
+    public void DamageBlink()
+    {
+        if(sprite.color != Color.white)
+        {
+            sprite.color = Color.Lerp(sprite.color, Color.white, 5f * Time.deltaTime);
+        }
     }
 
 

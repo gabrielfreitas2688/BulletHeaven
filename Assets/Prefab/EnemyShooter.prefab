@@ -558,7 +558,7 @@ MonoBehaviour:
   maxHP: 0
   mooveSpeed: 0
   attackSpeed: 0
-  attackVelocity: 0
+  bulletVelocity: 0
   damage: 0
   enemyAttackDamage: 10
   enemyMooveSpeed: 3

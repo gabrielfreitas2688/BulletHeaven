@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class EnemyManagement : MonoBehaviour
 {
     EntittyAtributes enemyAtributes;
+
     public Slider HPBar;
     void Start()
     {

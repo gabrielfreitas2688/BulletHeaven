@@ -11,7 +11,6 @@ public class PlayerManagement : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<EntittyAtributes>();
-        
 
         player.hp = player.maxHP;
         hpBar.maxValue = player.maxHP;
@@ -34,6 +33,8 @@ public class PlayerManagement : MonoBehaviour
             TakeDamage(enemyAttr.enemyAttackDamage);
             Destroy(collision.gameObject);
             GameManeger.Instance.GainXP(20);
+            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+
         }
     }
 
@@ -41,8 +42,9 @@ public class PlayerManagement : MonoBehaviour
     {
         player.hp -= damage;
         hpBar.value = player.hp;
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
 
-        if(player.hp <= 0)
+        if (player.hp <= 0)
         {
             GameManeger.Instance.GameOver();
         }
