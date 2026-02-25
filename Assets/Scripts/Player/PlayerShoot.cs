@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
+    public AudioSource fxShoot;
+    public AudioClip Shoot;
     EntittyAtributes playerAtributes;
     GameObject[] enemies;
     GameObject targetEnemy = null;
@@ -41,6 +43,7 @@ public class PlayerShoot : MonoBehaviour
             Vector3 enemyPosition = (targetEnemy.transform.position - transform.position).normalized;
             GameObject instantiateBullet = Instantiate(bullet, shootPoint.transform.position, Quaternion.identity);
             instantiateBullet.GetComponent<BulletPlayer>().Shoot(enemyPosition, playerAtributes.bulletVelocity);
+            fxShoot.PlayOneShot(Shoot);
         }
             
     }

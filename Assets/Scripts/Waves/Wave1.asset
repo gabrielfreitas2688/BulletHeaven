@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WaveData
   enemies:
   - enemyPrefab: {fileID: 23026599466617893, guid: 1736373fda3323e41ac86fff359fb125, type: 3}
-    count: 10
+    count: 6
   spawnRate: 0.4
